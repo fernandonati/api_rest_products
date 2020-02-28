@@ -6,5 +6,7 @@ import com.products.product.models.Products;
 
 
 public interface ProductRepository extends JpaRepository<Products,Long> {
-
+		
+    //To return a unique record.
+	Products findById(long id);
 }
